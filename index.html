@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">A Good Climber Is A Happy Climber</h1>
+    <p id="description">
+      Thank you for visiting our climbibg gym! We want YOU to be happy. Don't
+      waste time and submit this survey for us.
+    </p>
+    <form id="survey-form" action="/action_page.php">
+      <fieldset>
+        <legend>Fill in the form</legend>
+        <label id="name-label" for="name">Enter Your Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John Doe"
+          required
+        /><br /><br />
+        <label id="email-label" for="email">Enter Your E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="john_doe@johndoe.com"
+          required
+        /><br /><br />
+        <label id="number-label" for="number"
+          >Enter Your Age (Must be between 18 and 39):</label
+        ><br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Age"
+          min="18"
+          max="39"
+        />
+        <br /><br />
+        <br />
+        <label for="dropdown">Choose your favourite way to cilmb:</label><br />
+        <select name="dropdown" id="dropdown">
+          <optgroup label="In-doors:">
+            <option value="lead_climbing">Lead climbing</option>
+            <option value="top_rope">Top-rope</option>
+            <option value="bouldering">Bouldering</option>
+            <option value="chill">I just want to chill</option>
+          </optgroup>
+          <optgroup label="Out-doors:">
+            <option value="lead_climbing">Lead climbing</option>
+            <option value="bouldering">Bouldering</option>
+            <option value="dry">Dry-tooling</option>
+            <option value="ice">Ice climbing</option>
+          </optgroup></select
+        ><br /><br />
+        <h3>Pick your favourite climber:</h3>
+        <input
+          type="radio"
+          id="chris_sharma"
+          name="fav_climber"
+          value="Chris Sharma"
+        />
+        <label for="chris_sharma">Chris Sharma</label><br />
+        <input
+          type="radio"
+          id="adam_ondra"
+          name="fav_climber"
+          value="Adam Ondra"
+        />
+        <label for="adam_ondra">Adam Ondra</label><br />
+        <input
+          type="radio"
+          id="alex_honnold"
+          name="fav_climber"
+          value="Alex Honnold"
+        />
+        <label for="alex_honnold">Alex Honnold</label><br />
+        <input
+          type="radio"
+          id="sasha_digiulian"
+          name="fav_climber"
+          value="Sasha DiGiulian"
+        />
+        <label for="sasha_digiulian">Sasha DiGiulian</label><br />
+        <input
+          type="radio"
+          id="shauna_coxsey"
+          name="fav_climber"
+          value="Shauna Coxsey"
+        />
+        <label for="shauna_coxsey">Shauna Coxsey</label><br />
+        <input
+          type="radio"
+          id="daniel_woods"
+          name="fav_climber"
+          value="Daniel Woods"
+        />
+        <label for="daniel_woods">Daniel Woods</label><br />
+        <h3>Chose your favourite climbing shoe:</h3>
+        <input
+          type="checkbox"
+          id="shoe"
+          name="shoe"
+          value="La Sportiva Solution Comp"
+        />
+        <label for="shoe">La Sportiva Solution Comp</label><br />
+        <input
+          type="checkbox"
+          id="shoe"
+          name="shoe"
+          value="La Sportiva Miura"
+        />
+        <label for="shoe">La Sportiva Miura</label><br />
+        <input
+          type="checkbox"
+          id="shoe"
+          name="shoe"
+          value="Scarpa Instinct VS"
+        />
+        <label for="shoe">Scarpa Instinct VS</label><br />
+        <input type="checkbox" id="shoe" name="shoe" value="Evolv Shaman" />
+        <label for="shoe">Evolv Shaman</label><br />
+        <input type="checkbox" id="shoe" name="shoe" value="Five Ten Anasazi" />
+        <label for="shoe">Five Ten Anasazi</label><br />
+        <input
+          type="checkbox"
+          id="shoe"
+          name="shoe"
+          value="La Sportiva Skwama"
+        />
+        <label for="shoe">La Sportiva Skwama</label><br />
+        <h4>If you want to tell us more about yourself, do not hesitate:</h4>
+        <textarea name="textarea" id="text" cols="30" rows="10"></textarea
+        ><br /><br />
+        <input type="submit" id="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
